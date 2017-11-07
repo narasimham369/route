@@ -62,7 +62,7 @@ public class OpportunityTypeServiceImplTest {
 	public void testShouldGetOpportunityType()
 	{
 		OpportunityTypeListResponse resp= new OpportunityTypeListResponse();
-		List<OpportunityType> lstOpportunityType = new ArrayList<>();
+		List lstOpportunityType = new ArrayList<OpportunityType>();
 		OpportunityType newoptyp= new OpportunityType();
 		newoptyp.setId(1);
 		newoptyp.setType("part time");

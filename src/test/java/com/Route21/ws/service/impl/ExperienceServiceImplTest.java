@@ -124,7 +124,7 @@ public class ExperienceServiceImplTest {
 		newexp.setStartMonth("nov");
 		newexp.setStartYear(2);
 		newexp.setOrderId(1);
-		List<Experience> lstExp = new ArrayList<>();
+		List lstExp = new ArrayList<Experience>();
 		lstExp.add(newexp);
 		when(expRepository.findExperienceById(1l)).thenReturn(lstExp);
 		rep = experienceServiceImpl.getExperience(1l);

@@ -153,7 +153,7 @@ public class PartyQualificationServiceImplTest {
 		ptyQual.setMajor("Yes");
 		ptyQual.setOrderId(1);
 		ptyQual.setStartedOn(2010);
-		List<PartyQualification> lstPtyQualification  = new ArrayList<>();
+		List lstPtyQualification  = new ArrayList<PartyQualification>();
 		lstPtyQualification.add(ptyQual);
 		when(partyQualificationRepository.findByPtyId(1l)).thenReturn(lstPtyQualification);
 		response = partyQualificationServiceImpl.getPartQualificationByPartyId(1l);

@@ -132,7 +132,7 @@ public class PartyActivityServiceImplTest {
 		
 		PartyActivity partyActivity = new PartyActivity();
 		PartyActivityListResponse response = new PartyActivityListResponse();
-		List<PartyActivity> partyActivitylst = new ArrayList<>();
+		List partyActivitylst = new ArrayList<PartyActivity>();
 		partyActivity.setDescription("description");
 		partyActivity.setId(1);
 		partyActivity.setShortDescription("shortDescription");

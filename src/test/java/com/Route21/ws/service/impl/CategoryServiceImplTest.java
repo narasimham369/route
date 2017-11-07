@@ -66,7 +66,7 @@ public class CategoryServiceImplTest {
 		ctgy.setName("software");
 		ctgy.setId(2);
 		ctgy.setName("Hardware");
-		List<Category> lstCtgy = new ArrayList<>();
+		List lstCtgy = new ArrayList<Category>();
 		lstCtgy.add(ctgy);
 		CategoryListResponse resp = new CategoryListResponse();
 		when(categoryRepository.findAll()).thenReturn(lstCtgy);

@@ -83,7 +83,7 @@ public class ActivityTypeServiceImplTest {
 		ActivityTypeListResponse response = new ActivityTypeListResponse();
 		actType.setId(1);
 		actType.setType("Skills");
-		List<ActivityType> lstActType = new ArrayList<>();
+		List lstActType = new ArrayList<ActivityType>();
 		lstActType.add(actType);
 		when(activityTypeRepository.findAll()).thenReturn(lstActType);
 		response = activityTypeServiceImpl.getActivityType();

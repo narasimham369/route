@@ -71,7 +71,7 @@ public class QualificationServiceImplTest {
 		Qualification newqualification = new Qualification();
 		newqualification.setId(1);
 		newqualification.setName("Btech");
-		List<Qualification> lstqual = new ArrayList<>();
+		List lstqual = new ArrayList<Qualification>();
 		lstqual.add(newqualification);
 		when(qualificationRepository.findAll()).thenReturn(lstqual);
 		response = qualServiceImpl.getQualification();

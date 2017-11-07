@@ -93,7 +93,7 @@ public class ApplyOpportunityServiceImplTest {
 		opnty.setCategory(ctgy);
 		
 		PartyQualification ptyQual = new PartyQualification();
-		List<PartyQualification> lstPtyQualification = new ArrayList<>();
+		List lstPtyQualification = new ArrayList<PartyQualification>();
 		ptyQual.setId(1);
 		ptyQual.setGrade("A+");
 		ptyQual.setDescription("I have completed graduation");
@@ -118,8 +118,8 @@ public class ApplyOpportunityServiceImplTest {
 		ptyAct.setDescription("HOBBIESANDINTEREST");
 		ptyAct.setId(5);
 		ptyAct.setActivityType(actType);
-		List<PartyActivity> partyActivitylstskills = new ArrayList<>();
-		List<PartyActivity> partyActivitylstAchivements = new ArrayList<>();
+		List partyActivitylstskills = new ArrayList<PartyActivity>();
+		List partyActivitylstAchivements = new ArrayList<PartyActivity>();
 		partyActivitylstskills.add(ptyAct);
 		partyActivitylstAchivements.add(ptyAct);
 		ApplyOpportunityRequest newApply = new ApplyOpportunityRequest();
@@ -233,7 +233,7 @@ public class ApplyOpportunityServiceImplTest {
 		newApplyOpnty.setStatus("status");
 		newApplyOpnty.setStatusReason("statusReason");
 		
-		List<ApplyOpportunity> lstApply = new ArrayList<>();
+		List lstApply = new ArrayList<ApplyOpportunity>();
 		lstApply.add(newApplyOpnty);
 		
 		when(opntyRepository.findAll()).thenReturn(opntylst);
